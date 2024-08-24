@@ -1,0 +1,54 @@
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px; /* Adjust width as needed */
+    margin: 20px auto;
+    justify-content: center; /* Center buttons within the keyboard container */
+  }
+  
+  .keyboard-button-container {
+    position: relative;
+    margin: 5px;
+  }
+  
+  .keyboard-button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .keyboard-button.correct {
+    background-color: #28a745;  /* Green for correct guess */
+    color: white;
+  }
+  
+  .keyboard-button.incorrect {
+    background-color: #f9f9f9;  /* Light gray for incorrect guess */
+    color: #dc3545;  /* Red text color */
+  }
+  
+  .keyboard-button:disabled {
+    cursor: not-allowed;
+  }
+  
+  .red-cross {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #dc3545;
+    font-weight: normal;
+    font-family: cursive;
+    pointer-events: none; /* Prevent the cross from affecting button clicks */
+  }
+  
