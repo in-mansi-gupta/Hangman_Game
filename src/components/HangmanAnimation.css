@@ -1,0 +1,12 @@
+.hangman-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+  }
+  
+  .hangman-animation img {
+    width: 500px; 
+    height: auto;
+  }
+  

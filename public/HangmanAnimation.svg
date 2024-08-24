@@ -1,0 +1,17 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hangman parts -->
+  <g id="gallows">
+    <line x1="10" y1="180" x2="100" y2="180" stroke="black" stroke-width="2"/>
+    <line x1="30" y1="10" x2="30" y2="180" stroke="black" stroke-width="2"/>
+    <line x1="30" y1="10" x2="100" y2="10" stroke="black" stroke-width="2"/>
+    <line x1="100" y1="10" x2="100" y2="30" stroke="black" stroke-width="2"/>
+  </g>
+  
+  <!-- Hangman parts -->
+  <circle id="head" cx="100" cy="40" r="10" stroke="black" stroke-width="2" fill="none"/>
+  <line id="body" x1="100" y1="50" x2="100" y2="80" stroke="black" stroke-width="2"/>
+  <line id="leftArm" x1="100" y1="60" x2="90" y2="70" stroke="black" stroke-width="2"/>
+  <line id="rightArm" x1="100" y1="60" x2="110" y2="70" stroke="black" stroke-width="2"/>
+  <line id="leftLeg" x1="100" y1="80" x2="90" y2="90" stroke="black" stroke-width="2"/>
+  <line id="rightLeg" x1="100" y1="80" x2="110" y2="90" stroke="black" stroke-width="2"/>
+</svg>

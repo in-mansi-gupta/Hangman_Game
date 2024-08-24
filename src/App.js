@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import WordDisplay from './components/WordDisplay';
 import Keyboard from './components/Keyboard';
+import HangmanAnimation from './components/HangmanAnimation'; // Import the animation component
 import './App.css'; // Import the layout styles
 
 const wordList = {
@@ -48,9 +49,9 @@ function App() {
     <div className="App">
       <div className="left-half">
         <h1>Hangman Game</h1>
-        <h2>Hint: {hint}</h2>
+        <p>Hint: {hint}</p>
         <WordDisplay word={selectedWord} guessedLetters={guessedLetters} />
-        <h3>Wrong Guesses: {wrongGuesses}/{maxWrongGuesses}</h3>
+        <p>Wrong Guesses: {wrongGuesses}/{maxWrongGuesses}</p>
         {hasWon ? <p>Congratulations! You won!</p> : null}
         {hasLost ? <p>You lost! The word was "{selectedWord}".</p> : null}
         <Keyboard 
@@ -67,6 +68,7 @@ function App() {
       </div>
       <div className="right-half">
         <div className="keyboard-container">
+          <HangmanAnimation /> {/* Add Hangman animation here */}
         </div>
         
       </div>
